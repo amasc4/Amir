@@ -3,6 +3,9 @@ function setup(){
     createCanvas(1000, 1000);
     background(225, 225, 225);
 }
+
+
+
     var clickbox1 = false
     var clickbox2 = false
     var clickbox3 = false
@@ -200,7 +203,38 @@ function draw(){
 }   if (clickbox2 == true) {
         fill("blue")
         rect(0, 275, 100, 75)
-}
+}   if (clickbox3 == true) {
+        fill("blue")
+        rect(0, 350, 100, 75)
 
-}
+}   if (clickbox4 == true) {
+        fill("blue")
+        rect(0, 425, 100, 75)
 
+}   if (clickbox5 == true) {
+        fill("blue")
+        rect(0, 500, 100, 75)
+
+}   if (clickbox6 == true) {
+        fill("blue")
+        rect(0, 575, 100, 75)
+
+}   if (clickbox7 == true) {
+        fill("blue")
+        rect(0, 650, 100, 75)
+
+}   if (clickbox8 == true) {
+        fill("blue")
+        rect(0, 350, 100, 75)
+
+// } if (clickbox3 == true) {
+//         fill("blue")
+//         rect(0, 350, 100, 75)
+
+// } if (clickbox3 == true) {
+//         fill("blue")
+//         rect(0, 350, 100, 75)
+
+// }
+
+}}
