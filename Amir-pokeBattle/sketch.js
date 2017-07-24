@@ -21,7 +21,36 @@ function setup(){
     textSize(25)
     text("CPU", 840, 200)
     text(userInput, 40, 480)
+
+    function Pokemon(name, attacks, attacksTypes, hp, legendary, types){
+    this.name = name;
+    this.attacks = attacks;
+    this.attacksTypes = attacksTypes;
+    this.hp = hp;
+    this.legendary = legendary;
+    this.types = types;
 }
+
+    var pikachu = new Pokemon ("Pikachu", ["Agility = -33Dmg", "Discharge= -37Dmg", "Thunder= -43Dmg", "Light Screen= -50Dmg"], ["Pyschic", "Electric", "Electric", "Pyschic"], 35, false, "electric");
+    var mewtwo = new  Pokemon ("Mewtwo", ["Amnesia", "Safeguard", "Aura Sphere", "Psystrike"], ["Pyschic", "Normal", "Fighting", "Pyschic"], 106 , true , "pyschic");
+    fill("black")
+    textSize(18)
+    text("      Pikachu      HP: " + pikachu.hp, 120, 270)
+    text("Mewtwo           HP: " + mewtwo.hp, 580, 110)
+    textSize(25)
+    text("CPU", 840, 200)
+    text(userInput, 40, 480)
+
+    fill("red")
+    stroke(0, 0, 0)
+    var x = 0
+    var y = 0
+    var xx = 580
+    var yy = 140
+    rect(xx, 120, x, 20)
+    rect(yy, 280, y, 20)
+}
+
 
 function draw(){
 
@@ -62,15 +91,7 @@ function draw(){
     fill("pink")
     rect(630, 150, 100, 200, 20)
     fill("green")
-    var HPpik = 35
-    var HPmew = 106
-    fill("black")
-    textSize(18)
-    text("      Pikachu      HP: " + HPpik, 120, 270)
-    text("Mewtwo           HP: " + HPmew, 580, 110)
-    textSize(25)
-    text("CPU", 840, 200)
-    text(userInput, 40, 480)
+    
     
 
     
@@ -88,27 +109,30 @@ ms_passed = ticks - cur_ticks;
 }
 
 function mouseClicked() {
+    fill("red")
+    stroke(0, 0, 0)
+    var x = 0
+    var y = 0
+    var xx = 580
+    var yy = 140
+    rect(xx, 120, x, 20)
+    rect(yy, 280, y, 20)
     if (mouseX > 25 && mouseX < 225 && mouseY > 650 && mouseY < 700) {
         fill("red")
-       // stroke(0, 0, 0)
-        rect(690, 120, 90, 20)
-        // return false;
-        rect(220, 280, 80, 20)
-        HPpik = HPpik - 10
-        HPmew = HPmew - 30
+    stroke(0, 0, 0)
+    var x = 80
+    var y = 80
+    var xx = 580
+    var yy = 140
+    rect(xx, 120, x, 20)
+    rect(yy, 280, y, 20)
+        x = x+90
+        xx = xx+110
+        window.alert("")
     }if (mouseX > 250 && mouseX < 450 && mouseY > 650 && mouseY < 700) {
-        fill("red")
-       // stroke(0, 0, 0)
-        rect(600, 120, 180, 20)
-        // return false;
-        rect(160, 280, 160, 20)
-        HPpik = HPpik - 20
-        HPmew = HPmew - 45
+        
     }if (mouseX > 475 && mouseX < 675 && mouseY > 650 && mouseY < 700) {
-        fill("red")
-        rect(580, 120, 200, 20)
-      
-        window.alert("You win!!!")
+        
     }
    
     
