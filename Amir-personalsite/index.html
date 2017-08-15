@@ -9,7 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-scope" content="profile email">
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="138612192376-6j79cvembg0cvin4vqhpu289d4t4mdtg.apps.googleusercontent.com">
+    <script src="main.js"></script>
     <title>Amir Mustefa</title>
 
     <!-- Bootstrap Core CSS -->
@@ -32,7 +41,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
-
+    <script src="main.js"></script>
 
 <!-- Container element -->
     <style>
@@ -43,6 +52,7 @@
 </head>
 
 <body id="page-top" class="index">
+
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -102,26 +112,25 @@
                     <h3 class="section-subheading text-muted">Born and raised in Harlem, NY, by two Ethiopian immigrant parents, black excellence and striving for success has been a huge part of me since I was young. Being that both communities continue to suffer from the cyclical and systemic effects of poverty, I've always felt a weight of responsibility for providing for those who were not fourtunate to recieve the same guidance that I had. After going to public school since Kindergarden, I transfered into the Ethical Culture of Fieldston School, an elite private highschool in Bronx, NY, that is predominantly white. The polarizing experience of going to a mostly white school coming from a mostly black community has played a big role in crafting the man I am today. It has given me both a sense of purpose and direction as I hope to become the best and most successful person I can be in order to help those from my community who weren't given the same chance</h3>
                 </div>
             </div>
+            <div class="pics"><img src="C:\Users\ASC Guest\Desktop\business_chart_analytics_statistics_research_whiteboard_financial_report_presentation_information_gr-ph_infographic_stock_market_data_flat_design_icon-512.thumb.png.345279524f80ccba6d5f43888e623f69.png"><img></div>
+        
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    </span>
+                           </span>
                     <h4 class="service-heading">Finance</h4>
                     <p class="text-muted">I have always had a sincere passion for finance, the economy and global markets. Understanding how impactful it is to everybody, I've always felt it was an important to understand and not to mention trading stocks has been a great side hussle</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        
                     </span>
                     <h4 class="service-heading">Tech</h4>
                     <p class="text-muted">With profficiency in Python and JavaScript, programming has always been extremely important to me as well as web and app developement from HTML and CSS to the many app frameworks that exist for IOS and Android, it has always been a fun side project ot pursue.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        
                     </span>
                     <h4 class="service-heading">Social Issues</h4>
                     <p class="text-muted">Before, finance and technology, I am an activist at heart always doing my best to positively impact the communities I'm in. I am often present at many meaningful protests, confrences and even conversation regarding social inequality however, I hope that down the line I can do much more, using both my passion in tech and finance</p>
@@ -131,6 +140,7 @@
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
+        
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -248,7 +258,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>2019-2023</h4>
-                                    <h4 class="subheading">Attend and Graduate from an <br />Ivy League School</h4>
+                                    <h4 class="subheading">Attend and Graduate <br />College</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">While I don't believe what school you go to defines your wit or inteligence, in the field of fin-tech, going to great school helps so I plan to persue a strong education in order to open up more opportunities for me.</p>
@@ -348,7 +358,7 @@
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <input type="button" class="btn btn-xl" id="clickme" value="Send Message" onclick="text();"/>
                             </div>
                         </div>
                     </form>
@@ -361,15 +371,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Amir Is that Nigga</span>
+                    <span class="copyright">Copyright &copy; Amir is the man</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <li><a href="https://twitter.com/login"><i class="fa fa-twitter"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="https://www.facebook.com/login/"><i class="fa fa-facebook"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -583,6 +593,39 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 
+
+
+    <div class="signs">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+    </div>
+    <div class ="mainContainer">
+        <!--Text greeting user-->
+       
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+    </script>
+        <!--Populate section with user data-->
+        <section>
+            <!--picture-->
+
+            <!--User Data-->
+          
+        </section>
+    </div>
 </body>
 
 </html>

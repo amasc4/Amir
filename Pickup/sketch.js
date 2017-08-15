@@ -15,7 +15,7 @@ function onSignOut() {
     auth2.signOut().then(function () {
         console.log('User signed out.')
         //setting back to default
-        $(".userName").text("USER_NAME");
+        $(".userName").text("Amir");
         $("img").attr("src", "assets/placeholder.png");
         $(".email").text("example@example.com");
     });
@@ -29,7 +29,7 @@ $.ajax(
        {
            var text = data.tweet;
            console.log(data.tweet);
-           $("body").prepend("<h1>" + text + "</h1>");  
+           $("body").append("<h1>" + text + "</h1>");  
        }
    }
 )
