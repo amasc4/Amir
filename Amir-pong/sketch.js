@@ -1,14 +1,14 @@
 var x = 250
 var y = 250
-var a = 480
+var a = 1200
 var b = 100
 var c = 0
 var d = 100
-var xregulate = 10
-var yregulate = 15
+var xregulate = 5
+var yregulate = 10
 
 function setup(){
-    createCanvas(500, 500)
+    createCanvas(windowWidth, windowHeight)
 }
 
 function draw(){
@@ -46,8 +46,8 @@ function draw(){
     }
     clear();
     fill(225, 12, 220)
-    rect(a, b, 19, 130)
-    rect(c, d, 19, 130)
+    rect(a, b, 29, 200)
+    rect(c, d, 29, 200)
     fill(225, 0, 0)
     ellipse(x, y, 15, 15);
     x = xregulate + x
@@ -71,6 +71,7 @@ function draw(){
     }
     if (x == 500 || x == 0) {
         window.alert("Game Over")
+        window.location.reload();
     }
     // y = yregulate + y
     // if (y > 425 || y < 50){
